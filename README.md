@@ -3,6 +3,7 @@
 ## Overview
 
 ## AI Agent Flow diagram
+![N8N Resume Refine AI Agent Systems Diagram](https://github.com/joesghub/n8n_ai_agent_resume_refiner/blob/main/img/Resume_refiner_n8n.png)
 
 ## Building the Agent
 - What approach did you take to design your agent?
