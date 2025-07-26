@@ -8,7 +8,11 @@
 ## Building the Agent
 - What approach did you take to design your agent?
 - What challenges did you face in parsing, formatting, or integrating?
+  - Bad request - please check your parameters
+This model's maximum context length is 16385 tokens. However, your messages resulted in 101142 tokens (101105 in the messages, 37 in the functions). Please reduce the length of the messages or functions.
+
 - How did you ensure that the AI returned JSON reliably?
+  - 
 
 ## Troubleshooting
 - What issues did you encounter and how did you resolve them?
