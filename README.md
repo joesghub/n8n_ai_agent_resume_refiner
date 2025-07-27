@@ -38,9 +38,12 @@ The Resume Refiner Agent:
 ## Building the Agent
 - What approach did you take to design your agent?
 ![Resume Refiner Workflow](https://github.com/joesghub/n8n_ai_agent_resume_refiner/blob/main/img/resume%20refiner%20workflow.png?raw=true)
-    - I thought about the components the AI Agent would need to deliver a useful output. The simplest pieces are the applicant name and email address, those are string type. The resume and job link both need further extraction before the AI agent would be able to use the associated data. In choosing tools I tried to use less to limit the amount of data transformations. 
+    - I thought about the components the AI Agent would need to deliver a useful output. The simplest pieces are the applicant name and email address, those are string type. The resume and job link both need further extraction before the AI agent would be able to use the associated data. In choosing tools I tried to use less to limit the amount of data transformations.
+ 
+![Form Submission Node](https://github.com/joesghub/n8n_ai_agent_resume_refiner/blob/main/img/form%20submission%20node.png?raw=true) 
 
 - What challenges did you face in parsing, formatting, or integrating?
+![PDF Extract Node]([https://github.com/joesghub/n8n_ai_agent_resume_refiner/blob/main/img/form%20submission%20node.png?raw=true](https://github.com/joesghub/n8n_ai_agent_resume_refiner/blob/main/img/pdf%20extract%20node.png?raw=true)) 
 ![Parameter Token Length](https://github.com/joesghub/n8n_ai_agent_resume_refiner/blob/main/img/parameter%20token%20length.png?raw=true)
   - Error: Bad request - please check your parameters
     
@@ -55,7 +58,10 @@ I reduced my prompt size by changing the references to my resume and job link. F
 I asked ChatGPT: 
 - "I'm creating a structured output parser tool in a n8n flow. How would I best create a json format for this output response so it can be put into emails to read easily? Can you create a json schema? based on the instructions provided here: https://json-schema.org/learn/miscellaneous-examples"
 
-Since I was able to get the AI agent to read the inputs and generate 
+Since I was able to get the AI agent to read the inputs and generate a sensisble response, I only needed to format the output so that it could be parsed by the GMail send a message node. 
+
+![GMail Node](https://github.com/joesghub/n8n_ai_agent_resume_refiner/blob/main/img/email%20node.png?raw=true)
+
 
 ## Results
 **My Final Prompt**
