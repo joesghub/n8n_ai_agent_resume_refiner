@@ -33,8 +33,7 @@ The Resume Refiner Agent:
 - ✅ Outputs structured, formatted feedback in JSON
 - ✅ Sends professional-looking results directly to user inboxes
 ## AI Agent Flow diagram
-![N8N Resume Refine AI Agent Systems Diagram](https://github.com/joesghub/n8n_ai_agent_resume_refiner/blob/main/img/Resume_refiner_n8n.png?raw=true)
-
+![N8N Resume Refine AI Agent Systems Diagram](https://github.com/joesghub/n8n_ai_agent_resume_refiner/blob/main/img/Resume_refiner_n8n%20(2).png?raw=true)
 ## Building the Agent
 ### - What approach did you take to design your agent?
 ![Resume Refiner Workflow](https://github.com/joesghub/n8n_ai_agent_resume_refiner/blob/main/img/resume%20refiner%20workflow.png?raw=true)
