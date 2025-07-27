@@ -1,7 +1,37 @@
 # Resume Refiner AI Agent in n8n
 
 ## Overview
+The Resume Refiner AI Agent takes in a user's resume and a job description link, then uses OpenAI to return structured, actionable improvements. The response is formatted into a JSON structure that can be embedded into emails for clear and readable output.
 
+---
+
+## 🛠️ Technologies Used
+
+- **n8n** – Workflow automation platform for integrating services and logic
+- **OpenAI GPT-4 API** – Generates AI-based suggestions and text transformations
+- **HTTP Request Node** – Dynamically fetches job post content from user-submitted links
+- **JSON Schema** – Ensures structured output for consistent formatting
+- **Templated Emails** – Delivers responses in a clean, user-friendly email format
+
+---
+
+## 🧰 Key Skills Demonstrated
+
+- 🔹 **AI Prompt Engineering** – Designed prompts to optimize clarity and reduce token size
+- 🔹 **Token Management** – Reduced prompt size using dynamic content fetching and selective input trimming
+- 🔹 **Workflow Design** – Modular structure for resume parsing, job post summarizing, and email formatting
+- 🔹 **Error Handling** – Implemented fallback strategies for OpenAI token limits and malformed responses
+- 🔹 **JSON Structuring** – Enforced schema-based outputs to keep results consistent and machine-readable
+
+---
+
+## 📈 Outcome
+
+The Resume Refiner Agent:
+- ✅ Extracts and interprets job post requirements
+- ✅ Refines resume text to highlight relevant experience
+- ✅ Outputs structured, formatted feedback in JSON
+- ✅ Sends professional-looking results directly to user inboxes
 ## AI Agent Flow diagram
 ![N8N Resume Refine AI Agent Systems Diagram](https://github.com/joesghub/n8n_ai_agent_resume_refiner/blob/main/img/Resume_refiner_n8n.png?raw=true)
 
@@ -72,4 +102,6 @@ If invalid, auto-retry with a modified prompt:
 
 ✅ Why it matters: Improves readability and professionalism of the final result.
 
+---
 
+> Built with ❤️ by [@joesghub](https://github.com/joesghub)
