@@ -36,14 +36,14 @@ The Resume Refiner Agent:
 ![N8N Resume Refine AI Agent Systems Diagram](https://github.com/joesghub/n8n_ai_agent_resume_refiner/blob/main/img/Resume_refiner_n8n.png?raw=true)
 
 ## Building the Agent
-- What approach did you take to design your agent?
+### - What approach did you take to design your agent?
 ![Resume Refiner Workflow](https://github.com/joesghub/n8n_ai_agent_resume_refiner/blob/main/img/resume%20refiner%20workflow.png?raw=true)
     - I thought about the components the AI Agent would need to deliver a useful output. The simplest pieces are the applicant name and email address, those are string type. The resume and job link both need further extraction before the AI agent would be able to use the associated data. In choosing tools I tried to use less to limit the amount of data transformations.
  
 ![Form Submission Node](https://github.com/joesghub/n8n_ai_agent_resume_refiner/blob/main/img/form%20submission%20node.png?raw=true) 
 
-- What challenges did you face in parsing, formatting, or integrating?
-![PDF Extract Node]([https://github.com/joesghub/n8n_ai_agent_resume_refiner/blob/main/img/form%20submission%20node.png?raw=true](https://github.com/joesghub/n8n_ai_agent_resume_refiner/blob/main/img/pdf%20extract%20node.png?raw=true)) 
+### - What challenges did you face in parsing, formatting, or integrating?
+![PDF Extract Node](https://github.com/joesghub/n8n_ai_agent_resume_refiner/blob/main/img/pdf%20extract%20node.png?raw=true)
 ![Parameter Token Length](https://github.com/joesghub/n8n_ai_agent_resume_refiner/blob/main/img/parameter%20token%20length.png?raw=true)
   - Error: Bad request - please check your parameters
     
@@ -51,7 +51,7 @@ The Resume Refiner Agent:
 
 I reduced my prompt size by changing the references to my resume and job link. First I was sending in the full webpage and resume text into the prompt model. To reduce the size I added an HTTP Request tool to the model so the lookup would be run after the prompt. Instead of linking the full resume text, I referenced the file from the Collection Form. This allowed the prompt to be significantly shorter and enable the agent to deliver a response in a more effecient manner. 
 
-- How did you ensure that the AI returned JSON reliably?
+### - How did you ensure that the AI returned JSON reliably?
 ![Chat Gpt Json Schema](https://github.com/joesghub/n8n_ai_agent_resume_refiner/blob/main/img/chat%20gpt%20json%20schema.png?raw=true)
 ![Json Schema](https://github.com/joesghub/n8n_ai_agent_resume_refiner/blob/main/img/json%20schema.png?raw=true)
 
